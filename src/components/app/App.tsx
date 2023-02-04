@@ -1,10 +1,13 @@
 import React from 'react';
+import Layout from '../../layout/layout';
 import './App.css';
 
 function App(): JSX.Element {
   return (
     <div className="App">
-      <h1>ToDo</h1>
+      <Layout>
+        <p>content</p>
+      </Layout>
     </div>
   );
 }
