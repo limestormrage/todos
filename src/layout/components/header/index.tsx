@@ -5,8 +5,7 @@ import { HeaderApp } from './styles';
 export default function Header(): ReactElement {
   return (
     <HeaderApp>
-      <Title tag="h1">The-Do List</Title>
-      <p>Where</p>
+      <Title tag="h1">To-Do List</Title>
     </HeaderApp>
   );
 }

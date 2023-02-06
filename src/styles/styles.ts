@@ -1,18 +1,22 @@
 import { createGlobalStyle, css } from 'styled-components';
+import RalewayRegularWoff2 from 'assets/fonts/raleway-regular.woff2';
+import RalewayRegularWoff from 'assets/fonts/raleway-regular.woff';
+import LobsterWoff2 from 'assets/fonts/lobster.woff2';
+import LobsterWoff from 'assets/fonts/lobster.woff';
 
 export const GLobalStyles = createGlobalStyle`
   @font-face {
-    font-family: "Lobster";
-    src: url("../../assets/fonts/lobster.woff") format("woff");
-    src: url("../../assets/fonts/lobster.woff2") format("woff2");
+    font-family: 'Raleway';
+    src: url(${RalewayRegularWoff2}) format('woff2');
+    src: url(${RalewayRegularWoff}) format('woff');
     font-weight: 400;
     font-style: normal;
   }
 
   @font-face {
-    font-family: "Raleway";
-    src: url('../../assets/fonts/raleway-regular.woff') format('woff');
-    src: url('../../assets/fonts/raleway-regular.woff2') format('woff2');
+    font-family: 'Lobster';
+    src: url(${LobsterWoff2}) format('woff2');
+    src: url(${LobsterWoff}) format('woff');
     font-weight: 400;
     font-style: normal;
   }
@@ -34,7 +38,7 @@ export const GLobalStyles = createGlobalStyle`
   }
 
   body {
-    font-family: 'Raleway', Arial, sans-serif;
+    font-family: 'Raleway', 'Arial', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 36px;
