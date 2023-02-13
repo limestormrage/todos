@@ -1,11 +1,14 @@
 import React, { ReactElement } from 'react';
-import Title from '../../../components/title';
-import { HeaderApp } from './styles';
+import { HeaderApp, HeaderTitle, HeaderWrapper } from './styles';
 
 export default function Header(): ReactElement {
   return (
     <HeaderApp>
-      <Title tag="h1">To-Do List</Title>
+      <HeaderWrapper>
+        <HeaderTitle>
+          To-Do List
+        </HeaderTitle>
+      </HeaderWrapper>
     </HeaderApp>
   );
 }
